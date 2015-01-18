@@ -8,7 +8,7 @@ def main():
     prevodom = 0
     leg = 0
         
-    filename = "driving_legs.txt"
+    filename = "txtfile_for_solution_10.txt"
     file = open(filename, "r")
 
     for line in file:
@@ -32,7 +32,7 @@ def main():
         leg += 1
 
     totalmpg = totmilesdriven / totgasused
-    print("Overall Trip Data: \n\tTotal miles driven: {0}\n\tTotal Gas Used: {1} gallons\n\tOverall fuel efficeincy: {2:.2f}MPG" .format(totmilesdriven, totgasused, totalmpg))
+    print("Overall Trip Data: \n\tTotal miles driven: {0} miles\n\tTotal Gas Used: {1} gallons\n\tOverall fuel efficeincy: {2:.2f} MPG" .format(totmilesdriven, totgasused, totalmpg))
     file.close()          
 
 main()
