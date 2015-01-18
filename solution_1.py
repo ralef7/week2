@@ -4,20 +4,24 @@
 
 def main():
     def Fibonacci(n):
-        if n ==0:
-            return 0
-        if n == 1:
-            return 1
-        else:
-            return Fibonacci(n-1) + Fibonacci(n-2)
+        a = 0
+        b = 1
+        c = 1
 
-    x = eval(input("Enter a number for our Fibonacci code "))
+        for num in range(n):
+            a = b
+            b = c
+            c = a + b
 
+            n -= 1
+
+        return a
+
+    x = eval(input("Enter 'n' to find out the 'nth' Fibonacci number: "))
 
     print(Fibonacci(x))
 
 main()
-
 
 
 
