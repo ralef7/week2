@@ -13,7 +13,7 @@ def main():
             b = c
             c = a + b
 
-            n -= 1
+            num -= 1
 
         return a
 
