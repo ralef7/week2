@@ -6,7 +6,7 @@ import math
 
 def main():
     even = 2
-    x = eval(input("enter a number and see if it's prime "))
+    x = eval(input("enter a whole number (n > 2) and see if it's prime: "))
     y = int(math.sqrt(x))
 
     for i in range(even, y+1):
